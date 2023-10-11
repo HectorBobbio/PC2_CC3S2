@@ -4,6 +4,7 @@ Para encontrar la letra faltante, primero definimos en la variable "alfabeto" un
 
 ![F1](./image_2023-10-11_163042568.png)
 
+![F2](./image_2023-10-11_163609067.png)
 # BinaryTree.rb 
 
 Para crear un arbol binario, definimos dos clases: Nodo y BinaryTree. Cada nodo tendra tres atributos: la data que se quiera guardar, y dos referencias a un nodo derecho y uno izquierda. Un objeto BinaryTree tendra como unico atributo su raiz o root.
