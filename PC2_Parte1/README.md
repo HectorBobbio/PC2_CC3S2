@@ -2,7 +2,7 @@
 Creamos una clase Frase, que se inicializara haciendole pasar un string, que será la oracion con la que trabajaremos. 
 Para encontrar la letra faltante, primero definimos en la variable "alfabeto" un arreglo con todas las letras que van desde la 'a' hasta la 'z'. Estas son letras minusculas, asi que para hacer la comparación tendremos que pasar la variable @frase a minusculas. Luego iteramos por cada letra del alfabeto, y si encontramos una que no esta contenida en @frase, entonces guardamos esta letra en la variable missing_letter. Finalmente imprimimos missing_letter.
 
-! [] (image_2023-10-11_163042568.png)
+! [] (PC2_Parte1/image_2023-10-11_163042568.png)
 
 # BinaryTree.rb 
 
