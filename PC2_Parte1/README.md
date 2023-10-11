@@ -2,6 +2,8 @@
 Creamos una clase Frase, que se inicializara haciendole pasar un string, que será la oracion con la que trabajaremos. 
 Para encontrar la letra faltante, primero definimos en la variable "alfabeto" un arreglo con todas las letras que van desde la 'a' hasta la 'z'. Estas son letras minusculas, asi que para hacer la comparación tendremos que pasar la variable @frase a minusculas. Luego iteramos por cada letra del alfabeto, y si encontramos una que no esta contenida en @frase, entonces guardamos esta letra en la variable missing_letter. Finalmente imprimimos missing_letter.
 
+![][image_2023-10-11_163042568]
+
 # BinaryTree.rb 
 
 Para crear un arbol binario, definimos dos clases: Nodo y BinaryTree. Cada nodo tendra tres atributos: la data que se quiera guardar, y dos referencias a un nodo derecho y uno izquierda. Un objeto BinaryTree tendra como unico atributo su raiz o root.
