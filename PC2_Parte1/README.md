@@ -25,3 +25,7 @@ Para la función each decidí iterar sobre los elementos del árbol en orden de 
 Para la funcion include, iteramos sobre todos los elementos del arbol con nuestro recien creado método each. Si se encuentra una coincidencia entre uno de los elementos del arbol y el argumento de la funcion include? Entonces retornamos True, si no ocurre ninguna coincidencia entonces retornamos False. 
 
 ![F6](./image_2023-10-11_163843467.png)
+
+A continuacion, un ejemplo de como insertamos valores en el arbol, como se verifica si esta vacío o no, como imprimimos cada valor del arbol en orden de nivel, confirmamos si el arbol incluye un dato 3 (true) y si incluye un valor 8 (false).
+
+![F7](./image_2023-10-11_164342786.png)
