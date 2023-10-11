@@ -1,0 +1,1330 @@
+Started GET "/" for ::1 at 2023-10-11 07:53:35 -0500
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.9ms | Allocations: 931)
+Completed 200 OK in 10ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 10015)
+
+
+  [1m[35m (14.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (2.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMovies (20231011125838)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "rating" varchar, "description" text, "release_date" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231011125838"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-10-11 13:06:43.579699"], ["updated_at", "2023-10-11 13:06:43.579699"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Ganibal"], ["rating", "G"], ["description", nil], ["release_date", "1992-11-25 00:00:00"], ["created_at", "2023-10-11 13:16:08.610181"], ["updated_at", "2023-10-11 13:16:08.610181"]]
+  [1m[36mTRANSACTION (14.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Fuerza bruta"], ["rating", "R"], ["description", nil], ["release_date", "1989-07-21 00:00:00"], ["created_at", "2023-10-11 13:16:08.626533"], ["updated_at", "2023-10-11 13:16:08.626533"]]
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "The Ring"], ["rating", "PG-13"], ["description", nil], ["release_date", "2011-08-10 00:00:00"], ["created_at", "2023-10-11 13:16:08.631407"], ["updated_at", "2023-10-11 13:16:08.631407"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.2ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Alien: The Return "], ["rating", "PG"], ["description", nil], ["release_date", "1981-06-12 00:00:00"], ["created_at", "2023-10-11 13:16:08.635625"], ["updated_at", "2023-10-11 13:16:08.635625"]]
+  [1m[36mTRANSACTION (1.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" ORDER BY "movies"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/" for ::1 at 2023-10-11 08:17:25 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.8/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.5ms | Allocations: 826)
+Completed 200 OK in 4ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 7459)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 08:17:29 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/movies"):
+  
+Started GET "/movie" for ::1 at 2023-10-11 08:17:37 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/movie"):
+  
+Started GET "/movies" for ::1 at 2023-10-11 08:18:16 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/movies"):
+  
+Started GET "/movies" for ::1 at 2023-10-11 08:24:18 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (uninitialized constant MoviesController):
+  
+Started GET "/movies" for ::1 at 2023-10-11 08:29:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.5ms | Allocations: 475)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 20106)
+  Rendered layout layouts/application.html.erb (Duration: 181.6ms | Allocations: 118096)
+Completed 200 OK in 186ms (Views: 182.5ms | ActiveRecord: 0.3ms | Allocations: 125456)
+
+
+Started GET "/" for ::1 at 2023-10-11 11:38:43 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for ::1 at 2023-10-11 11:38:43 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.4ms | Allocations: 473)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 20156)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 56285)
+Completed 200 OK in 56ms (Views: 50.1ms | ActiveRecord: 0.3ms | Allocations: 63634)
+
+
+Started GET "/movies/3000" for ::1 at 2023-10-11 11:42:27 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3000"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 3000], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:63:in `set_movie'
+Completed 404 Not Found in 7ms (ActiveRecord: 0.2ms | Allocations: 8057)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=3000):
+  
+app/controllers/movies_controller.rb:63:in `set_movie'
+Started GET "/movies/3000" for ::1 at 2023-10-11 11:45:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3000"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 3000], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:67:in `set_movie'
+Completed 404 Not Found in 5ms (ActiveRecord: 0.4ms | Allocations: 7184)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=3000):
+  
+app/controllers/movies_controller.rb:67:in `set_movie'
+Started GET "/movies/" for ::1 at 2023-10-11 11:45:51 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.9ms | Allocations: 464)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 19.7ms | Allocations: 18899)
+  Rendered layout layouts/application.html.erb (Duration: 62.2ms | Allocations: 53505)
+Completed 200 OK in 65ms (Views: 64.0ms | ActiveRecord: 0.3ms | Allocations: 54846)
+
+
+Started GET "/movies/7" for ::1 at 2023-10-11 11:45:53 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:67:in `set_movie'
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms | Allocations: 985)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=7):
+  
+app/controllers/movies_controller.rb:67:in `set_movie'
+Started GET "/movies/7" for ::1 at 2023-10-11 11:46:26 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:67:in `set_movie'
+Completed 404 Not Found in 4ms (ActiveRecord: 0.4ms | Allocations: 7164)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=7):
+  
+app/controllers/movies_controller.rb:67:in `set_movie'
+Started GET "/movies/7" for ::1 at 2023-10-11 11:46:27 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:67:in `set_movie'
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms | Allocations: 996)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Movie with 'id'=7):
+  
+app/controllers/movies_controller.rb:67:in `set_movie'
+Started GET "/movies/7" for ::1 at 2023-10-11 11:50:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.4ms | Allocations: 9227)
+
+
+  
+NameError (uninitialized constant MoviesController::RecordNotFound):
+  
+app/controllers/movies_controller.rb:69:in `rescue in set_movie'
+app/controllers/movies_controller.rb:67:in `set_movie'
+Started GET "/movies/7" for ::1 at 2023-10-11 11:50:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+Redirected to http://localhost:3000/movies
+Filter chain halted as :set_movie rendered or redirected
+Completed 302 Found in 4ms (ActiveRecord: 0.4ms | Allocations: 7288)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 11:50:42 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.4ms | Allocations: 473)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 19355)
+  Rendered layout layouts/application.html.erb (Duration: 48.9ms | Allocations: 54352)
+Completed 200 OK in 52ms (Views: 50.0ms | ActiveRecord: 0.1ms | Allocations: 58450)
+
+
+Started GET "/movies/1000" for ::1 at 2023-10-11 11:50:46 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1000"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 1000], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+Redirected to http://localhost:3000/movies
+Filter chain halted as :set_movie rendered or redirected
+Completed 302 Found in 1ms (ActiveRecord: 0.1ms | Allocations: 1024)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 11:50:46 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1556)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3756)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 4115)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 11:58:09 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.4ms | Allocations: 475)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 9.7ms | Allocations: 20178)
+  Rendered layout layouts/application.html.erb (Duration: 50.5ms | Allocations: 55232)
+Completed 200 OK in 55ms (Views: 51.0ms | ActiveRecord: 0.6ms | Allocations: 62594)
+
+
+Started GET "/movies/3000" for ::1 at 2023-10-11 11:58:13 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3000"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 3000], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+Redirected to http://localhost:3000/movies
+Filter chain halted as :set_movie rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.2ms | Allocations: 3577)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 11:58:13 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.3ms | Allocations: 67)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1561)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3887)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.1ms | Allocations: 4261)
+
+
+Started GET "/movies/20" for ::1 at 2023-10-11 12:00:10 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"20"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+Redirected to http://localhost:3000/movies
+Filter chain halted as :set_movie rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 7858)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 12:00:10 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.5ms | Allocations: 470)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 19233)
+  Rendered layout layouts/application.html.erb (Duration: 48.0ms | Allocations: 54051)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.1ms | Allocations: 58149)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 12:00:27 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 1601)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 3803)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.1ms | Allocations: 4173)
+
+
+Started GET "/movies/3000" for ::1 at 2023-10-11 12:01:35 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"3000"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 3000], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+Redirected to http://localhost:3000/movies
+Filter chain halted as :set_movie rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.4ms | Allocations: 3288)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 12:01:35 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 87)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 3433)
+  Rendered layout layouts/application.html.erb (Duration: 7.4ms | Allocations: 17107)
+Completed 200 OK in 8ms (Views: 8.1ms | ActiveRecord: 0.1ms | Allocations: 17937)
+
+
+Started GET "/movies/new" for ::1 at 2023-10-11 12:03:57 -0500
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/_form.html.erb (Duration: 14.3ms | Allocations: 11083)
+  Rendered movies/new.html.erb within layouts/application (Duration: 15.7ms | Allocations: 11444)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 13750)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 14228)
+
+
+Started GET "/" for ::1 at 2023-10-11 12:12:07 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for ::1 at 2023-10-11 12:12:07 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.3ms | Allocations: 473)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 7.8ms | Allocations: 20164)
+  Rendered layout layouts/application.html.erb (Duration: 49.0ms | Allocations: 55184)
+Completed 200 OK in 53ms (Views: 49.8ms | ActiveRecord: 0.3ms | Allocations: 62533)
+
+
+Started GET "/movies/new" for ::1 at 2023-10-11 12:12:10 -0500
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 0.5ms | Allocations: 142)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 2706)
+Completed 200 OK in 4ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3169)
+
+
+Started POST "/movies" for ::1 at 2023-10-11 12:12:18 -0500
+Processing by MoviesController#create as TURBO_STREAM
+  Parameters: {"title"=>"abc", "description"=>"defg", "Agregar"=>""}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 1045)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: movie):
+  
+app/controllers/movies_controller.rb:77:in `movie_params'
+app/controllers/movies_controller.rb:28:in `create'
+Started GET "/movies/new" for ::1 at 2023-10-11 12:12:18 -0500
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 0.0ms | Allocations: 7)
+  Rendered layout layouts/application.html.erb (Duration: 1.6ms | Allocations: 2726)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 3102)
+
+
+Started GET "/movies/new" for ::1 at 2023-10-11 12:13:50 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/_form.html.erb (Duration: 3.4ms | Allocations: 3877)
+  Rendered movies/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 4629)
+  Rendered layout layouts/application.html.erb (Duration: 45.0ms | Allocations: 39665)
+Completed 200 OK in 55ms (Views: 46.3ms | ActiveRecord: 0.2ms | Allocations: 63632)
+
+
+Started POST "/movies" for ::1 at 2023-10-11 12:14:03 -0500
+Processing by MoviesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "movie"=>{"title"=>"abc", "rating"=>"3", "description"=>"abc", "release_date"=>""}, "commit"=>"Create Movie"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:31:in `block in create'
+  [1m[36mMovie Create (2.0ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "abc"], ["rating", "3"], ["description", "abc"], ["release_date", nil], ["created_at", "2023-10-11 17:14:03.992913"], ["updated_at", "2023-10-11 17:14:03.992913"]]
+  ↳ app/controllers/movies_controller.rb:31:in `block in create'
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/movies/5
+Completed 302 Found in 10ms (ActiveRecord: 6.2ms | Allocations: 3970)
+
+
+Started GET "/movies/5" for ::1 at 2023-10-11 12:14:04 -0500
+Processing by MoviesController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/_movie.html.erb (Duration: 0.3ms | Allocations: 332)
+  Rendered movies/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1906)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 4201)
+Completed 200 OK in 5ms (Views: 3.3ms | ActiveRecord: 0.1ms | Allocations: 7824)
+
+
+Started GET "/movies/5/edit" for ::1 at 2023-10-11 12:14:06 -0500
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/edit.html.erb within layouts/application
+  Rendered movies/_form.html.erb (Duration: 1.9ms | Allocations: 1801)
+  Rendered movies/edit.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2114)
+  Rendered layout layouts/application.html.erb (Duration: 6.6ms | Allocations: 4293)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.1ms | Allocations: 5215)
+
+
+Started GET "/movies/" for ::1 at 2023-10-11 12:14:34 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 71)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1999)
+  Rendered layout layouts/application.html.erb (Duration: 3.8ms | Allocations: 4197)
+Completed 200 OK in 4ms (Views: 4.0ms | ActiveRecord: 0.1ms | Allocations: 4605)
+
+
+Started GET "/movies/new" for ::1 at 2023-10-11 12:19:36 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 5636)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 5738)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.2ms | Allocations: 29650)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `movie' for #<ActionView::Base:0x0000000000aff0>
+Did you mean?  @movie):
+    1: <h1>New movie</h1>
+    2: 
+    3: <%= form_with(model: movie) do |form| %>
+    4:   <div>
+    5:     <%= form.label :title%>
+    6:     <%= form.text_field :title %>
+  
+app/views/movies/new.html.erb:3
+Started GET "/movies/new" for ::1 at 2023-10-11 12:19:36 -0500
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 3.0ms | Allocations: 4175)
+  Rendered layout layouts/application.html.erb (Duration: 3.1ms | Allocations: 4246)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 4583)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `movie' for #<ActionView::Base:0x0000000000b2e8>
+Did you mean?  @movie):
+    1: <h1>New movie</h1>
+    2: 
+    3: <%= form_with(model: movie) do |form| %>
+    4:   <div>
+    5:     <%= form.label :title%>
+    6:     <%= form.text_field :title %>
+  
+app/views/movies/new.html.erb:3
+Started GET "/movies/new" for ::1 at 2023-10-11 12:19:59 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 3431)
+  Rendered layout layouts/application.html.erb (Duration: 42.4ms | Allocations: 38505)
+Completed 200 OK in 52ms (Views: 43.6ms | ActiveRecord: 0.4ms | Allocations: 62477)
+
+
+Started POST "/movies" for ::1 at 2023-10-11 12:20:13 -0500
+Processing by MoviesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "movie"=>{"title"=>"Testing", "description"=>"Testing something right now"}, "commit"=>"Create Movie"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:31:in `block in create'
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Testing"], ["rating", nil], ["description", "Testing something right now"], ["release_date", nil], ["created_at", "2023-10-11 17:20:13.978698"], ["updated_at", "2023-10-11 17:20:13.978698"]]
+  ↳ app/controllers/movies_controller.rb:31:in `block in create'
+  [1m[36mTRANSACTION (1.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/movies/6
+Completed 302 Found in 6ms (ActiveRecord: 1.7ms | Allocations: 4349)
+
+
+Started GET "/movies/6" for ::1 at 2023-10-11 12:20:13 -0500
+Processing by MoviesController#show as TURBO_STREAM
+  Parameters: {"id"=>"6"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/_movie.html.erb (Duration: 0.3ms | Allocations: 336)
+  Rendered movies/show.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1944)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 4243)
+Completed 200 OK in 7ms (Views: 3.8ms | ActiveRecord: 0.1ms | Allocations: 7865)
+
+
+Started DELETE "/movies/6" for ::1 at 2023-10-11 12:20:43 -0500
+Processing by MoviesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"6"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:56:in `destroy'
+  [1m[36mMovie Destroy (0.5ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/movies_controller.rb:56:in `destroy'
+  [1m[36mTRANSACTION (14.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:56:in `destroy'
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 22ms (ActiveRecord: 14.9ms | Allocations: 2713)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 12:20:43 -0500
+Processing by MoviesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 71)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered movies/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1986)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 4186)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.1ms | Allocations: 4626)
+
+
+Started GET "/movies/5" for ::1 at 2023-10-11 12:20:46 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered movies/show.html.erb within layouts/application (Duration: 1.2ms | Allocations: 726)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 2904)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.2ms | Allocations: 4072)
+
+
+Started GET "/movies/5/edit" for ::1 at 2023-10-11 12:20:50 -0500
+Processing by MoviesController#edit as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/edit.html.erb within layouts/application
+  Rendered movies/_form.html.erb (Duration: 4.2ms | Allocations: 2299)
+  Rendered movies/edit.html.erb within layouts/application (Duration: 5.9ms | Allocations: 2669)
+  Rendered layout layouts/application.html.erb (Duration: 8.7ms | Allocations: 4847)
+Completed 200 OK in 12ms (Views: 9.4ms | ActiveRecord: 0.2ms | Allocations: 5679)
+
+
+Started PATCH "/movies/5" for ::1 at 2023-10-11 12:21:06 -0500
+Processing by MoviesController#update as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "movie"=>{"title"=>"Testing", "rating"=>"", "description"=>"Testing somehting...", "release_date"=>""}, "commit"=>"Update Movie", "id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:44:in `block in update'
+  [1m[36mMovie Update (0.1ms)[0m  [1m[33mUPDATE "movies" SET "title" = ?, "rating" = ?, "description" = ?, "updated_at" = ? WHERE "movies"."id" = ?[0m  [["title", "Testing"], ["rating", ""], ["description", "Testing somehting..."], ["updated_at", "2023-10-11 17:21:06.439969"], ["id", 5]]
+  ↳ app/controllers/movies_controller.rb:44:in `block in update'
+  [1m[36mTRANSACTION (2.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:44:in `block in update'
+Redirected to http://localhost:3000/movies/5
+Completed 302 Found in 6ms (ActiveRecord: 2.4ms | Allocations: 3093)
+
+
+Started GET "/movies/5" for ::1 at 2023-10-11 12:21:06 -0500
+Processing by MoviesController#show as TURBO_STREAM
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 23)
+  Rendered movies/show.html.erb within layouts/application (Duration: 0.5ms | Allocations: 745)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 2922)
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.0ms | Allocations: 4076)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 12:21:09 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 38)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1593)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 3791)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.1ms | Allocations: 4120)
+
+
+Started GET "/movies/5" for ::1 at 2023-10-11 12:21:12 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 23)
+  Rendered movies/show.html.erb within layouts/application (Duration: 0.7ms | Allocations: 736)
+  Rendered layout layouts/application.html.erb (Duration: 3.5ms | Allocations: 2913)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 4064)
+
+
+Started DELETE "/movies/5" for ::1 at 2023-10-11 12:21:14 -0500
+Processing by MoviesController#destroy as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"5"}
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:56:in `destroy'
+  [1m[36mMovie Destroy (0.3ms)[0m  [1m[31mDELETE FROM "movies" WHERE "movies"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/movies_controller.rb:56:in `destroy'
+  [1m[36mTRANSACTION (14.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:56:in `destroy'
+Redirected to http://localhost:3000/movies
+Completed 302 Found in 21ms (ActiveRecord: 14.6ms | Allocations: 2412)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 12:21:14 -0500
+Processing by MoviesController#index as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.2ms | Allocations: 38)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1489)
+  Rendered layout layouts/application.html.erb (Duration: 6.7ms | Allocations: 3687)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.1ms | Allocations: 4019)
+
+
+Started GET "/movies/new" for ::1 at 2023-10-11 12:22:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 3.4ms | Allocations: 3436)
+  Rendered layout layouts/application.html.erb (Duration: 44.4ms | Allocations: 38570)
+Completed 200 OK in 54ms (Views: 45.7ms | ActiveRecord: 0.2ms | Allocations: 62543)
+
+
+Started POST "/movies" for ::1 at 2023-10-11 12:22:12 -0500
+Processing by MoviesController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "movie"=>{"title"=>"Testing", "description"=>"Testing something right now"}, "commit"=>"Create Movie"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/movies_controller.rb:31:in `block in create'
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Testing"], ["rating", nil], ["description", "Testing something right now"], ["release_date", nil], ["created_at", "2023-10-11 17:22:12.739426"], ["updated_at", "2023-10-11 17:22:12.739426"]]
+  ↳ app/controllers/movies_controller.rb:31:in `block in create'
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/movies_controller.rb:31:in `block in create'
+Redirected to http://localhost:3000/movies/7
+Completed 302 Found in 4ms (ActiveRecord: 1.4ms | Allocations: 4333)
+
+
+Started GET "/movies/7" for ::1 at 2023-10-11 12:22:12 -0500
+Processing by MoviesController#show as TURBO_STREAM
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/_movie.html.erb (Duration: 0.3ms | Allocations: 336)
+  Rendered movies/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1940)
+  Rendered layout layouts/application.html.erb (Duration: 3.4ms | Allocations: 4235)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.1ms | Allocations: 7857)
+
+
+Started GET "/movies/7" for ::1 at 2023-10-11 12:23:05 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+  [1m[36mCACHE Movie Load (0.0ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:11:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering movies/show.html.erb within layouts/application
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 22)
+  Rendered movies/show.html.erb within layouts/application (Duration: 1.3ms | Allocations: 784)
+  Rendered layout layouts/application.html.erb (Duration: 2.9ms | Allocations: 2963)
+Completed 200 OK in 6ms (Views: 3.4ms | ActiveRecord: 0.2ms | Allocations: 4218)
+
+
+Started GET "/movies/" for ::1 at 2023-10-11 12:23:08 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.2ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.2ms | Allocations: 71)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2004)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 4202)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.2ms | Allocations: 4610)
+
+
+Started GET "/" for ::1 at 2023-10-11 14:30:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for ::1 at 2023-10-11 14:30:03 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.6ms | Allocations: 473)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered movies/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 20292)
+  Rendered layout layouts/application.html.erb (Duration: 52.4ms | Allocations: 55308)
+Completed 200 OK in 57ms (Views: 53.5ms | ActiveRecord: 0.4ms | Allocations: 62657)
+
+
+Started GET "/" for ::1 at 2023-10-11 15:42:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20231011193653_add_service_name_to_active_storage_blobs.active_storage.rb
+20231011193654_create_active_storage_variant_records.active_storage.rb
+20231011193655_remove_not_null_on_active_storage_blobs_checksum.active_storage.rb
+
+
+):
+  
+activerecord (7.0.8) lib/active_record/migration.rb:662:in `check_pending!'
+activerecord (7.0.8) lib/active_record/migration.rb:627:in `block (2 levels) in call'
+activesupport (7.0.8) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.8) lib/active_record/migration.rb:632:in `block in call'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-10-11 15:42:48 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 3 pending migrations:
+
+20231011193653_add_service_name_to_active_storage_blobs.active_storage.rb
+20231011193654_create_active_storage_variant_records.active_storage.rb
+20231011193655_remove_not_null_on_active_storage_blobs_checksum.active_storage.rb
+
+
+):
+  
+activerecord (7.0.8) lib/active_record/migration.rb:662:in `check_pending!'
+activerecord (7.0.8) lib/active_record/migration.rb:627:in `block (2 levels) in call'
+activesupport (7.0.8) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.8) lib/active_record/migration.rb:632:in `block in call'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2023-10-11 15:42:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20231011193653)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231011193653"]]
+  [1m[36mTRANSACTION (14.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageVariantRecords (20231011193654)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231011193654"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveNotNullOnActiveStorageBlobsChecksum (20231011193655)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231011193655"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-10-11 15:42:58 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for ::1 at 2023-10-11 15:42:58 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.4ms | Allocations: 390)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered movies/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 18166)
+  Rendered layout layouts/application.html.erb (Duration: 176.9ms | Allocations: 120772)
+Completed 200 OK in 182ms (Views: 177.4ms | ActiveRecord: 0.4ms | Allocations: 125784)
+
+
+Started GET "/" for ::1 at 2023-10-11 15:43:15 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for ::1 at 2023-10-11 15:43:15 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.3ms | Allocations: 473)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered movies/index.html.erb within layouts/application (Duration: 7.9ms | Allocations: 20295)
+  Rendered layout layouts/application.html.erb (Duration: 44.5ms | Allocations: 55426)
+Completed 200 OK in 49ms (Views: 45.5ms | ActiveRecord: 0.3ms | Allocations: 62777)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 15:45:41 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.4ms | Allocations: 475)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered movies/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 20308)
+  Rendered layout layouts/application.html.erb (Duration: 40.7ms | Allocations: 55294)
+Completed 200 OK in 46ms (Views: 41.6ms | ActiveRecord: 0.3ms | Allocations: 62656)
+
+
+Started GET "/" for ::1 at 2023-10-11 16:10:59 -0500
+  
+ActiveRecord::ConnectionNotEstablished (connection to server on socket "/var/run/postgresql/.s.PGSQL.5432" failed: FATAL:  role "hector" does not exist
+):
+  
+activerecord (7.0.8) lib/active_record/connection_adapters/postgresql_adapter.rb:87:in `rescue in new_client'
+activerecord (7.0.8) lib/active_record/connection_adapters/postgresql_adapter.rb:77:in `new_client'
+activerecord (7.0.8) lib/active_record/connection_adapters/postgresql_adapter.rb:37:in `postgresql_connection'
+activerecord (7.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `public_send'
+activerecord (7.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:656:in `new_connection'
+activerecord (7.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:700:in `checkout_new_connection'
+activerecord (7.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:679:in `try_to_checkout_new_connection'
+activerecord (7.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:640:in `acquire_connection'
+activerecord (7.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:341:in `checkout'
+activerecord (7.0.8) lib/active_record/connection_adapters/abstract/connection_pool.rb:181:in `connection'
+activerecord (7.0.8) lib/active_record/connection_adapters/abstract/connection_handler.rb:211:in `retrieve_connection'
+activerecord (7.0.8) lib/active_record/connection_handling.rb:313:in `retrieve_connection'
+activerecord (7.0.8) lib/active_record/connection_handling.rb:280:in `connection'
+activerecord (7.0.8) lib/active_record/migration.rb:648:in `connection'
+activerecord (7.0.8) lib/active_record/migration.rb:643:in `build_watcher'
+activerecord (7.0.8) lib/active_record/migration.rb:625:in `block in call'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-10-11 16:16:02 -0500
+  [1m[35m (3.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 5 pending migrations:
+
+20231011125838_create_movies.rb
+20231011193653_add_service_name_to_active_storage_blobs.active_storage.rb
+20231011193654_create_active_storage_variant_records.active_storage.rb
+20231011193655_remove_not_null_on_active_storage_blobs_checksum.active_storage.rb
+20231011211412_pg.rb
+
+
+):
+  
+activerecord (7.0.8) lib/active_record/migration.rb:662:in `check_pending!'
+activerecord (7.0.8) lib/active_record/migration.rb:627:in `block (2 levels) in call'
+activesupport (7.0.8) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.8) lib/active_record/migration.rb:632:in `block in call'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for ::1 at 2023-10-11 16:16:03 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mCACHE ActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActiveRecord::PendingMigrationError (
+
+Migrations are pending. To resolve this issue, run:
+
+        bin/rails db:migrate RAILS_ENV=development
+
+You have 5 pending migrations:
+
+20231011125838_create_movies.rb
+20231011193653_add_service_name_to_active_storage_blobs.active_storage.rb
+20231011193654_create_active_storage_variant_records.active_storage.rb
+20231011193655_remove_not_null_on_active_storage_blobs_checksum.active_storage.rb
+20231011211412_pg.rb
+
+
+):
+  
+activerecord (7.0.8) lib/active_record/migration.rb:662:in `check_pending!'
+activerecord (7.0.8) lib/active_record/migration.rb:627:in `block (2 levels) in call'
+activesupport (7.0.8) lib/active_support/file_update_checker.rb:83:in `execute'
+activerecord (7.0.8) lib/active_record/migration.rb:632:in `block in call'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `synchronize'
+activerecord (7.0.8) lib/active_record/migration.rb:624:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.8) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.8) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.8) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.8) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.8) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.8) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.8) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.8) lib/action_dispatch/middleware/host_authorization.rb:138:in `call'
+railties (7.0.8) lib/rails/engine.rb:530:in `call'
+puma (5.6.7) lib/puma/configuration.rb:252:in `call'
+puma (5.6.7) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.7) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.7) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.7) lib/puma/server.rb:443:in `process_client'
+puma (5.6.7) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/rails/actions" for ::1 at 2023-10-11 16:16:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateMovies (20231011125838)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "movies" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar, "rating" varchar, "description" text, "release_date" datetime(6), "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231011125838"]]
+  [1m[36mTRANSACTION (2.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddServiceNameToActiveStorageBlobs (20231011193653)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231011193653"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateActiveStorageVariantRecords (20231011193654)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231011193654"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to RemoveNotNullOnActiveStorageBlobsChecksum (20231011193655)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231011193655"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to Pg (20231011211412)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20231011211412"]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.1ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-10-11 21:16:08.221096"], ["updated_at", "2023-10-11 21:16:08.221096"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-10-11 16:16:08 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for ::1 at 2023-10-11 16:16:08 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1626)
+  Rendered layout layouts/application.html.erb (Duration: 109.3ms | Allocations: 63469)
+Completed 200 OK in 114ms (Views: 110.2ms | ActiveRecord: 0.1ms | Allocations: 68461)
+
+
+Started GET "/movies/new" for ::1 at 2023-10-11 16:16:10 -0500
+Processing by MoviesController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/new.html.erb within layouts/application
+  Rendered movies/new.html.erb within layouts/application (Duration: 3.2ms | Allocations: 3134)
+  Rendered layout layouts/application.html.erb (Duration: 4.4ms | Allocations: 5453)
+Completed 200 OK in 13ms (Views: 4.7ms | ActiveRecord: 1.0ms | Allocations: 20857)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Ganibal"], ["rating", "G"], ["description", nil], ["release_date", "1992-11-25 00:00:00"], ["created_at", "2023-10-11 21:17:23.558125"], ["updated_at", "2023-10-11 21:17:23.558125"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Fuerza bruta"], ["rating", "R"], ["description", nil], ["release_date", "1989-07-21 00:00:00"], ["created_at", "2023-10-11 21:17:23.561869"], ["updated_at", "2023-10-11 21:17:23.561869"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "The Ring"], ["rating", "PG-13"], ["description", nil], ["release_date", "2011-08-10 00:00:00"], ["created_at", "2023-10-11 21:17:23.564609"], ["updated_at", "2023-10-11 21:17:23.564609"]]
+  [1m[36mTRANSACTION (1.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mMovie Create (0.1ms)[0m  [1m[32mINSERT INTO "movies" ("title", "rating", "description", "release_date", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["title", "Alien: The Return "], ["rating", "PG"], ["description", nil], ["release_date", "1981-06-12 00:00:00"], ["created_at", "2023-10-11 21:17:23.567304"], ["updated_at", "2023-10-11 21:17:23.567304"]]
+  [1m[36mTRANSACTION (1.1ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/movies" for ::1 at 2023-10-11 16:17:30 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.4ms | Allocations: 475)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 9.1ms | Allocations: 20248)
+  Rendered layout layouts/application.html.erb (Duration: 42.3ms | Allocations: 55323)
+Completed 200 OK in 57ms (Views: 43.5ms | ActiveRecord: 0.3ms | Allocations: 62686)
+
+
+Started GET "/movies/99" for ::1 at 2023-10-11 16:17:34 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"99"}
+  [1m[36mMovie Load (0.3ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 99], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+Redirected to http://localhost:3000/movies
+Filter chain halted as :set_movie rendered or redirected
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms | Allocations: 3568)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 16:17:34 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.3ms | Allocations: 66)
+  Rendered movies/_movie.html.erb (Duration: 0.2ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1569)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3890)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.1ms | Allocations: 4264)
+
+
+Started GET "/" for ::1 at 2023-10-11 16:21:17 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for ::1 at 2023-10-11 16:21:17 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.4ms | Allocations: 473)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 8.7ms | Allocations: 20152)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 55209)
+Completed 200 OK in 48ms (Views: 43.2ms | ActiveRecord: 0.3ms | Allocations: 62658)
+
+
+Started GET "/" for ::1 at 2023-10-11 17:08:42 -0500
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/movies" for ::1 at 2023-10-11 17:08:43 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.4ms | Allocations: 473)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 7.7ms | Allocations: 20151)
+  Rendered layout layouts/application.html.erb (Duration: 36.5ms | Allocations: 55086)
+Completed 200 OK in 41ms (Views: 37.3ms | ActiveRecord: 0.3ms | Allocations: 62437)
+
+
+Started GET "/movies/10" for ::1 at 2023-10-11 17:08:53 -0500
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies" WHERE "movies"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  ↳ app/controllers/movies_controller.rb:68:in `set_movie'
+Redirected to http://localhost:3000/movies
+Filter chain halted as :set_movie rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.1ms | Allocations: 3561)
+
+
+Started GET "/movies" for ::1 at 2023-10-11 17:08:53 -0500
+Processing by MoviesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering movies/index.html.erb within layouts/application
+  [1m[36mMovie Load (0.1ms)[0m  [1m[34mSELECT "movies".* FROM "movies"[0m
+  ↳ app/views/movies/index.html.erb:6
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 66)
+  Rendered movies/_movie.html.erb (Duration: 0.1ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/_movie.html.erb (Duration: 0.0ms | Allocations: 37)
+  Rendered movies/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1569)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 3890)
+Completed 200 OK in 3ms (Views: 3.2ms | ActiveRecord: 0.1ms | Allocations: 4264)
+
+
